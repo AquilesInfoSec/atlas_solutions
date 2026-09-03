@@ -3,126 +3,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypt Tech - Serviços de TI</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Crypt Tech - Soluções completas de TI para empresas. Suporte técnico, desenvolvimento de sistemas, cibersegurança e administração de servidores.">
+  <meta name="keywords" content="suporte técnico, desenvolvimento de sistemas, cibersegurança, servidores, TI, tecnologia da informação">
+  <meta name="author" content="Crypt Tech">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crypttech.com.br/">
+  <meta property="og:title" content="Crypt Tech - Soluções de TI">
+  <meta property="og:description" content="Soluções completas de TI para empresas. Suporte técnico, desenvolvimento, cibersegurança e servidores.">
+  <meta property="og:image" content="https://crypttech.com.br/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://crypttech.com.br/">
+  <meta property="twitter:title" content="Crypt Tech - Soluções de TI">
+  <meta property="twitter:description" content="Soluções completas de TI para empresas. Suporte técnico, desenvolvimento, cibersegurança e servidores.">
+  <meta property="twitter:image" content="https://crypttech.com.br/og-image.png">
+
+  <title>Crypt Tech | Soluções de TI para Empresas</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar">
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
     <div class="container">
-      <a href="#" class="logo">Crypt<span>Tech</span></a>
-      <ul class="nav-links">
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato" class="btn-nav">Contato</a></li>
+      <a href="#" class="logo" aria-label="Crypt Tech - Página inicial">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Crypt<span>Tech</span></span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
+        <li role="none"><a href="#portfolio" role="menuitem">Portfólio</a></li>
+        <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
+        <li role="none"><a href="#contato" class="btn-nav" role="menuitem">Contato</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </nav>
 
+  <!-- Hero -->
   <header class="hero">
     <div class="container">
       <div class="hero-content">
+        <div class="hero-badge">🚀 Soluções de TI</div>
         <h1>Soluções de TI que <span>impulsionam</span> seu negócio</h1>
         <p>Suporte técnico, desenvolvimento de sistemas, cibersegurança e administração de servidores — tudo que você precisa em um só lugar.</p>
-        <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" class="btn-primary">Solicitar Orçamento</a>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" rel="noopener" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Solicitar Orçamento
+          </a>
+          <a href="#servicos" class="btn-secondary">
+            Ver Serviços
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+        </div>
       </div>
       <div class="hero-visual">
         <div class="code-block">
-          <pre><span class="kw">function</span> <span class="fn">solution</span>() {
-  <span class="kw">return</span> <span class="str">"your success"</span>;
-}</pre>
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">solution.js</span>
+          </div>
+          <pre><code><span class="kw">function</span> <span class="fn">solution</span>() {
+  <span class="kw">const</span> <span class="var">result</span> = {
+    <span class="prop">suporte</span>: <span class="str">"24/7"</span>,
+    <span class="prop">segurança</span>: <span class="str">"máxima"</span>,
+    <span class="prop">performance</span>: <span class="str">"otimizada"</span>
+  };
+  <span class="kw">return</span> result.<span class="fn">transform</span>();
+}</code></pre>
+        </div>
+        <div class="floating-card card-1">
+          <span class="card-icon">🔒</span>
+          <span>Segurança</span>
+        </div>
+        <div class="floating-card card-2">
+          <span class="card-icon">⚡</span>
+          <span>Performance</span>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="servicos" class="services">
+  <!-- Services -->
+  <section id="servicos" class="services" aria-labelledby="services-title">
     <div class="container">
-      <h2>Meus Serviços</h2>
+      <h2 id="services-title">Meus Serviços</h2>
       <p class="subtitle">Soluções completas para sua infraestrutura de TI</p>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+        <article class="service-card">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8"/>
+              <path d="M12 17v4"/>
+            </svg>
+          </div>
           <h3>Suporte Técnico</h3>
           <p>Manutenção de computadores, redes e help desk com atendimento ágil e remoto.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <ul class="service-features">
+            <li>✔ Suporte remoto 24/7</li>
+            <li>✔ Manutenção preventiva</li>
+            <li>✔ Help desk especializado</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
           <h3>Desenvolvimento</h3>
           <p>Criação de sites, sistemas web e aplicativos sob medida para seu negócio.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <ul class="service-features">
+            <li>✔ Sites e landing pages</li>
+            <li>✔ Sistemas web completos</li>
+            <li>✔ APIs e backends</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
           <h3>Cibersegurança</h3>
           <p>Proteção contra ameaças digitais, auditoria de segurança e implementação de políticas.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg></div>
+          <ul class="service-features">
+            <li>✔ Auditoria de segurança</li>
+            <li>✔ Proteção contra ataques</li>
+            <li>✔ Políticas de segurança</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="8" rx="2"/>
+              <rect x="2" y="14" width="20" height="8" rx="2"/>
+              <path d="M6 6h.01"/>
+              <path d="M6 18h.01"/>
+            </svg>
+          </div>
           <h3>Administração de Servidores</h3>
           <p>Configuração, monitoramento e manutenção de servidores Linux/Windows e cloud.</p>
-        </div>
+          <ul class="service-features">
+            <li>✔ Linux e Windows</li>
+            <li>✔ Cloud AWS/Azure</li>
+            <li>✔ Monitoramento 24/7</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="sobre" class="about">
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
+    <div class="container">
+      <h2 id="portfolio-title">Portfólio</h2>
+      <p class="subtitle">Alguns dos projetos que desenvolvi</p>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <div class="portfolio-placeholder">🖥️</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Sistema Web</span>
+            <h3>Painel de Gestão</h3>
+            <p>Sistema completo de gestão empresarial com dashboard em tempo real.</p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <div class="portfolio-placeholder">📱</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Aplicativo</span>
+            <h3>App de Delivery</h3>
+            <p>Aplicativo mobile para delivery com rastreamento em tempo real.</p>
+            <div class="tech-tags">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>Maps API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <div class="portfolio-placeholder">🔒</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Cibersegurança</span>
+            <h3>Segurança Corporativa</h3>
+            <p>Implementação de política de segurança completa para empresa de 200+ funcionários.</p>
+            <div class="tech-tags">
+              <span>Firewall</span>
+              <span>VPN</span>
+              <span>Auditoria</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <div class="portfolio-placeholder">☁️</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Infraestrutura</span>
+            <h3>Migração Cloud</h3>
+            <p>Migração completa de infraestrutura local para AWS com zero downtime.</p>
+            <div class="tech-tags">
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="sobre" class="about" aria-labelledby="about-title">
     <div class="container">
       <div class="about-content">
-        <h2>Sobre Mim</h2>
+        <h2 id="about-title">Sobre Mim</h2>
         <p>Profissional de TI com experiência em infraestrutura, desenvolvimento e segurança. Ofereço soluções completas e personalizadas para pequenas e médias empresas que desejam tecnologia confiável e eficiente.</p>
         <p>Meu objetivo é traduzir necessidades de TI em soluções práticas que geram resultados reais para seu negócio.</p>
+
+        <div class="tech-stack">
+          <h3>Tecnologias</h3>
+          <div class="tech-icons">
+            <div class="tech-item" title="JavaScript">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item" title="React">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 01-2.304 2.008 2.227 2.227 0 01-2.305-2.008 2.227 2.227 0 012.305-2.008 2.236 2.236 0 012.304 2.008zM12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm0-21.6c-5.303 0-9.6 4.297-9.6 9.6s4.297 9.6 9.6 9.6 9.6-4.297 9.6-9.6-4.297-9.6-9.6-9.6zm0-2.4a12 12 0 100 24 12 12 0 000-24zm5.76 12a5.76 5.76 0 01-5.76 5.76 5.76 5.76 0 01-5.76-5.76 5.76 5.76 0 015.76-5.76 5.76 5.76 0 015.76 5.76z"/></svg>
+              <span>React</span>
+            </div>
+            <div class="tech-item" title="Node.js">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339a.29.29 0 00.272 0l8.795-5.076a.277.277 0 00.134-.238V6.921a.28.28 0 00-.137-.242l-8.791-5.072a.278.278 0 00-.271 0L3.075 6.68a.284.284 0 00-.139.241v10.15c0 .099.053.19.138.241l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675A1.857 1.857 0 011.2 17.07V6.921c0-.681.363-1.317.953-1.658L10.946.188a1.927 1.927 0 011.807 0l8.794 5.075c.591.34.955.977.955 1.658v10.15c0 .68-.364 1.316-.955 1.656l-8.794 5.076c-.28.163-.602.247-.924.247a2.47 2.47 0 01-.858-.164l-2.556-1.475c-.07-.045-.159-.045-.218-.017-.627.355-.816.44-1.228.627-.082.038-.17.043-.255.014L3.01 17.753a1.853 1.853 0 01-.922-1.602V6.921c0-.679.362-1.314.95-1.655L11.053.189a1.906 1.906 0 011.802 0l8.791 5.077c.589.341.951.976.951 1.655v10.15c0 .679-.362 1.315-.951 1.656l-8.791 5.076c-.28.162-.603.246-.924.246z"/></svg>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-item" title="Python">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z"/></svg>
+              <span>Python</span>
+            </div>
+            <div class="tech-item" title="Docker">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.186.186 0 00-.185.186v1.887c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.186.186 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.186v1.887c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.186v1.887c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.186.186 0 00-.185-.186H5.136a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.186v1.887c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.687 11.687 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288z"/></svg>
+              <span>Docker</span>
+            </div>
+            <div class="tech-item" title="Linux">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 00-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.368 1.884 1.43.021.006.04.014.058.021h.006c.044-.003.089-.01.136-.014.073-.014.144-.022.216-.022.133 0 .266.014.397.035.239.043.475.126.687.277.323.229.573.578.705.977.063.173.107.365.128.567.069.512-.068 1.024-.38 1.424-.226.287-.518.514-.834.697-.385.217-.8.38-1.214.481-.795.184-1.556.242-2.081.057-.445-.149-.742-.477-.964-.886a1.798 1.798 0 00-.173-.268c-.027-.033-.054-.064-.084-.094l-.009-.008c-.011-.01-.022-.02-.034-.027-.029.025-.064.056-.104.096-.145.143-.32.288-.538.424-.445.279-.997.425-1.645.425h-.007c-.648.003-1.114-.139-1.486-.327-.139-.073-.26-.154-.372-.238-.028.024-.053.05-.077.077l-.002.002c-.312.357-.735.592-1.268.648-.352.036-.69.012-.976-.103-.197-.08-.368-.2-.521-.343-.016.017-.028.035-.041.054-.095.139-.156.307-.174.498-.02.2.014.413.088.572.185.377.56.571.973.571h.003c.145 0 .291-.026.432-.071.212-.072.405-.183.565-.327.018-.016.034-.033.05-.051l.008-.008c.267-.264.587-.422.953-.422.074 0 .149.01.222.028.262.072.463.248.592.468.044.083.077.174.097.271.045.233-.016.483-.141.675-.135.202-.337.346-.573.409-.252.067-.52.049-.771-.072-.17-.083-.316-.2-.445-.34-.013-.014-.024-.028-.035-.044l-.003-.003c-.168-.212-.388-.383-.655-.489-.282-.112-.592-.141-.901-.082-.299.054-.58.191-.802.394-.047.043-.089.09-.128.141-.012-.013-.023-.027-.033-.042-.153-.235-.386-.414-.674-.514-.304-.106-.641-.124-.978-.048-.34.076-.648.254-.879.508-.051.056-.095.117-.135.182-.009-.013-.018-.024-.026-.037-.171-.26-.444-.463-.777-.565-.23-.07-.473-.093-.717-.084-.215.01-.428.051-.63.146-.04.02-.077.044-.114.07-.007-.009-.013-.019-.018-.029-.162-.275-.45-.485-.814-.567-.346-.087-.725-.038-1.09.166-.226.127-.43.315-.588.556l-.004.007c-.117.191-.263.353-.442.473-.202.131-.437.2-.68.192-.229-.01-.455-.067-.673-.163-.161-.069-.314-.162-.454-.277-.007-.006-.014-.012-.02-.019l-.002-.002c-.153-.146-.345-.253-.564-.311-.232-.062-.482-.064-.734-.011-.21.044-.405.133-.574.26-.01.007-.02.014-.028.022-.108.116-.238.21-.387.282-.182.088-.388.128-.598.128-.196 0-.389-.038-.57-.109-.192-.078-.367-.199-.508-.353-.005-.005-.01-.01-.014-.016-.121-.15-.281-.267-.469-.343-.205-.083-.431-.118-.662-.107-.22.011-.433.073-.622.18-.019.01-.037.022-.054.034l-.016.013c-.09.072-.195.123-.312.149-.139.029-.286.008-.425-.052-.144-.06-.274-.155-.382-.274-.012-.014-.024-.027-.034-.042l-.002-.002c-.109-.148-.258-.261-.436-.331-.197-.08-.415-.106-.636-.089-.236.02-.465.091-.664.214-.038.023-.073.05-.107.08-.023-.027-.044-.057-.064-.087-.149-.214-.372-.378-.637-.464-.24-.083-.502-.1-.761-.047-.244.054-.466.181-.636.361-.043.043-.079.093-.111.148-.015-.016-.028-.033-.04-.051-.151-.211-.38-.371-.651-.45-.228-.071-.473-.088-.718-.061-.273.036-.533.152-.737.335-.056.052-.103.113-.144.181-.003-.003-.005-.007-.008-.01-.155-.194-.376-.341-.643-.414-.239-.07-.497-.077-.755-.026-.295.061-.565.214-.764.432-.04.044-.074.093-.103.147l-.005-.005c-.144-.176-.352-.31-.596-.386-.255-.087-.535-.105-.816-.065-.328.052-.628.203-.854.431-.043.043-.08.092-.111.146-.004-.005-.008-.01-.011-.015-.144-.196-.371-.345-.645-.424-.262-.082-.547-.096-.832-.053-.336.058-.642.225-.873.464-.033.035-.061.075-.086.118l-.002-.002c-.137-.185-.354-.328-.622-.413-.29-.097-.612-.113-.935-.068-.327.052-.624.199-.86.425-.006.006-.011.013-.016.02-.152-.189-.384-.335-.671-.412-.295-.085-.613-.089-.932-.019-.355.082-.672.282-.896.557l-.004.006c-.119-.166-.313-.296-.545-.383-.264-.105-.558-.146-.855-.122-.328.033-.636.178-.872.407-.002.002-.004.004-.006.006-.145-.179-.381-.322-.681-.405-.297-.09-.621-.1-.946-.053-.32.053-.615.206-.837.432-.005.005-.009.01-.013.016-.119-.157-.311-.282-.547-.37-.28-.109-.586-.151-.894-.124-.337.039-.651.196-.882.437l-.003.003c-.107-.143-.274-.26-.477-.347-.212-.097-.445-.153-.688-.17-.275-.028-.557.027-.817.147l.001-.001c-.104-.124-.241-.225-.405-.3l-.001.001z"/></svg>
+              <span>Linux</span>
+            </div>
+            <div class="tech-item" title="AWS">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.145.368.246.576.04.083.055.16.055.228 0 .116-.066.232-.197.344l-.448.336c-.08.06-.152.088-.216.088-.088 0-.18-.044-.275-.132a2.07 2.07 0 01-.284.168c-.108.052-.224.08-.348.08-.364 0-.665-.116-.904-.352-.24-.236-.36-.576-.36-1.02 0-.476.126-.883.378-1.223.252-.34.592-.51.102-.51.152 0 .304.028.456.084.152.056.284.132.4.224a.85.85 0 00.496.156c.192 0 .36-.064.505-.188.148-.128.22-.296.22-.504a1.3 1.3 0 00-.148-.472 1.67 1.67 0 00-.428-.364c-.276-.2-.605-.296-.988-.296-.46 0-.833.124-1.124.376-.288.252-.433.6-.433 1.044 0 .476.13.872.393 1.188.26.316.602.472 1.027.472.148 0 .296-.024.444-.072.148-.048.272-.12.372-.208v-.54zm3.628.892c-.148 0-.248-.032-.3-.096-.064-.064-.12-.2-.176-.404l-1.956-6.501h-.844l1.212 4.284 1.164-4.284h-.78l-1.08 3.612c-.104.328-.216.56-.336.692-.12.132-.272.196-.46.196l.168-.696h.956l-.176.716zm2.32 1.876c.34 0 .636-.064.888-.196.252-.132.464-.34.636-.624.172-.284.26-.632.26-1.048 0-.424-.088-.776-.264-1.06-.176-.28-.396-.492-.66-.636a1.91 1.91 0 00-.924-.212c-.356 0-.66.076-.912.228a1.46 1.46 0 00-.52.564c-.096.212-.152.428-.152.648h.748c.008-.088.032-.18.072-.276.044-.096.108-.18.196-.248.088-.072.196-.108.324-.108.128 0 .236.04.324.116.088.08.148.188.176.328.032.136.04.28.04.428v.184c-.104.008-.216.016-.328.024-.116.008-.228.02-.336.036a1.48 1.48 0 00-.36.12c-.112.052-.196.128-.248.224-.056.096-.08.208-.08.332 0 .124.028.232.084.32.056.088.132.16.224.208.096.052.2.08.316.08zm1.804-.14h.748V7.012h-.748v4.652zm2.772 1.664c.148 0 .3-.016.456-.048.156-.032.3-.088.424-.156v-.648a1.45 1.45 0 00-.224.088c-.112.052-.22.08-.324.08-.256 0-.384-.148-.384-.44v-3.2h-.748v3.516c0 .48.108.852.324 1.112.216.26.532.384.948.384zm2.268.048c.424 0 .78-.12 1.064-.36.288-.24.433-.592.433-1.06 0-.344-.084-.632-.252-.864-.164-.232-.396-.384-.696-.456.24-.128.42-.276.54-.444.12-.168.18-.36.18-.576 0-.24-.064-.452-.188-.636a1.29 1.29 0 00-.504-.392c-.208-.1-.428-.148-.66-.148-.244 0-.464.052-.66.152-.196.1-.356.244-.476.428-.12.184-.184.396-.188.632h-.7c.008-.464.152-.856.428-1.172a1.83 1.83 0 011.272-.608c.488 0 .884.132 1.192.396.308.264.46.636.46 1.116 0 .344-.088.636-.264.876-.172.24-.4.404-.68.492.216.092.388.232.52.416.132.188.196.404.196.652 0 .248-.068.464-.2.644a1.3 1.3 0 01-.528.424c-.224.1-.46.148-.708.148-.252 0-.476-.052-.672-.152a1.35 1.35 0 01-.468-.416c-.116-.18-.18-.384-.188-.612h.74c.008.1.04.196.096.28.06.084.136.152.228.204.092.052.196.076.312.076zm3.492.096c.172 0 .336-.024.492-.072.156-.048.292-.132.404-.248v-2.168h-.748v.576c-.12.008-.24.016-.36.024-.12.008-.236.02-.348.036-.288.052-.516.192-.684.42-.168.228-.252.544-.252.948 0 .416.084.748.252.992.168.244.396.364.684.416a5.8 5.8 0 00.568.048zm2.164 1.296h.748V7.012h-.748v4.652zm.372-6.68c.248 0 .46-.08.636-.24.176-.16.264-.364.264-.612 0-.248-.088-.452-.264-.612-.176-.16-.388-.24-.636-.24-.252 0-.464.08-.64.24-.172.16-.26.364-.26.612 0 .248.088.452.26.612.176.16.388.24.64.24z"/></svg>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+
         <div class="stats">
-          <div class="stat"><strong>5+</strong> <span>Anos de experiência</span></div>
-          <div class="stat"><strong>50+</strong> <span>Projetos realizados</span></div>
-          <div class="stat"><strong>98%</strong> <span>Clientes satisfeitos</span></div>
+          <div class="stat-card">
+            <div class="stat-icon">💼</div>
+            <strong>5+</strong>
+            <span>Anos de experiência</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🚀</div>
+            <strong>50+</strong>
+            <span>Projetos realizados</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⭐</div>
+            <strong>98%</strong>
+            <span>Clientes satisfeitos</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="contact">
+  <!-- Contact -->
+  <section id="contato" class="contact" aria-labelledby="contact-title">
     <div class="container">
-      <h2>Entre em Contato</h2>
+      <h2 id="contact-title">Entre em Contato</h2>
       <p class="subtitle">Vamos conversar sobre como posso ajudar seu negócio</p>
-      <form id="contact-form">
-        <div class="form-group">
-          <input type="text" id="name" placeholder="Seu nome" required>
+      <div class="contact-wrapper">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required autocomplete="name">
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Em posso ajudar?">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
+            <span class="error-message" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">
+            <span class="btn-text">Enviar via WhatsApp</span>
+            <span class="btn-loading" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+          </button>
+        </form>
+        <div class="contact-whatsapp">
+          <div class="divider">
+            <span>ou</span>
+          </div>
+          <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" rel="noopener" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enviar Mensagem no WhatsApp
+          </a>
         </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Seu e-mail" required>
-        </div>
-        <div class="form-group">
-          <input type="text" id="subject" placeholder="Assunto">
-        </div>
-        <div class="form-group">
-          <textarea id="message" rows="5" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Enviar via WhatsApp</button>
-      </form>
-      <div class="contact-whatsapp">
-        <p>ou fale diretamente:</p>
-        <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" class="btn-whatsapp">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Enviar Mensagem
-        </a>
       </div>
     </div>
   </section>
 
-  <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" class="whatsapp-float" aria-label="Fale pelo WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5598982344038?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20o%20or%C3%A7amento%20de%20um%20servi%C3%A7o." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Crypt Tech. Todos os direitos reservados.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Crypt<span>Tech</span></span>
+          </a>
+          <p>Soluções completas de TI para sua empresa</p>
+        </div>
+        <div class="footer-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Crypt Tech. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
 </body>
 </html>
